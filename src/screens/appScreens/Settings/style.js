@@ -1,0 +1,283 @@
+import React from "react";
+import { Platform, StyleSheet } from "react-native";
+import {
+  responsiveFontSize,
+  responsiveHeight,
+  responsiveWidth,
+} from "react-native-responsive-dimensions";
+import { buttonColor, cardColor, textColor } from "../../../constants/colors";
+import { fontFamily } from "../../../constants/fonts";
+
+export const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor:'white'
+  },
+  topView: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+  },
+  cover: {
+    flex: 1,
+    //  paddingTop:responsiveHeight(1)
+  },
+  nametxt: {
+    fontSize: responsiveFontSize(2.5),
+    fontFamily: fontFamily.appTextBold,
+    color: textColor.white,
+    marginTop: responsiveHeight(1),
+  },
+  ringbtnimage2: {
+    height: responsiveHeight(3),
+    width: responsiveWidth(5),
+    resizeMode: "contain",
+  },
+  card: {
+    width: responsiveWidth(90),
+    backgroundColor: cardColor.primary,
+    borderRadius: responsiveWidth(3),
+    alignSelf: "center",
+    marginTop: responsiveHeight(2),
+    padding: responsiveWidth(3),
+  },
+  txt: {
+    color: textColor.primary,
+    fontSize: responsiveFontSize(2.2),
+    fontFamily: fontFamily.appTextRegular,
+    paddingVertical: responsiveHeight(1),
+  },
+  biotxt: {
+    color: textColor.secondary,
+    marginBottom: responsiveHeight(1),
+    fontFamily: fontFamily.appTextBold,
+  },
+  myphotoview: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    width: responsiveWidth(90),
+    alignSelf: "center",
+    marginTop: responsiveHeight(3),
+  },
+  image: {
+    height: responsiveHeight(35),
+    width: responsiveWidth(40),
+    marginLeft: responsiveWidth(2),
+    borderRadius: responsiveWidth(4),
+  },
+  dp: {
+    height: responsiveWidth(100),
+    width: responsiveWidth(100),
+    borderRadius: responsiveWidth(5),
+    alignSelf: "center",
+    // marginTop: responsiveHeight(2),
+  },
+  circlecard2: {
+    height: responsiveWidth(100),
+    // backgroundColor:'red',
+    alignItems: "center",
+    justifyContent: "center",
+    zIndex: 1,
+    position: Platform.OS === "android" ? "absolute" : null,
+    paddingHorizontal: responsiveWidth(3),
+  },
+  circlecard3: {
+    height: responsiveWidth(100),
+    // backgroundColor:'red',
+    alignItems: "center",
+    justifyContent: "center",
+    zIndex: 1,
+    position: Platform.OS === "android" ? "absolute" : null,
+    right: 0,
+    paddingHorizontal: responsiveWidth(3),
+  },
+  myphototxt: {
+    fontFamily: fontFamily.appTextBold,
+    fontSize: responsiveFontSize(1.7),
+  },
+  Promptscard: {
+    backgroundColor: cardColor.secondary,
+    width: responsiveWidth(90),
+    borderRadius: responsiveWidth(5),
+    alignSelf: "center",
+    marginTop: responsiveHeight(2),
+    padding: responsiveWidth(3),
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+  },
+  footer: {
+    marginBottom: responsiveHeight(2),
+  },
+  circlecard: {
+    height: responsiveWidth(10),
+    width: responsiveWidth(10),
+    borderRadius: responsiveWidth(10 / 2),
+    backgroundColor: cardColor.primary,
+    alignItems: "center",
+    justifyContent: "center",
+    marginLeft: responsiveWidth(3),
+    shadowColor: "#000",
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84,
+    elevation: 5,
+  },
+  circlecardview: {
+    flexDirection: "row",
+    position: "absolute",
+    zIndex: 1,
+    marginTop: responsiveHeight(4),
+    alignSelf: "flex-end",
+    paddingRight: responsiveWidth(5),
+    paddingTop: Platform.OS === "ios" ? responsiveHeight(3) : 0,
+  },
+  rbsheetbtn: {
+    borderTopWidth: responsiveWidth(0.3),
+    height: responsiveHeight(7),
+    paddingLeft: responsiveWidth(5),
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+    paddingRight: responsiveWidth(5),
+    borderBottomColor: buttonColor.grey,
+    borderTopColor: buttonColor.grey,
+  },
+  rbsheetbtntxt: {
+    fontFamily: fontFamily.appTextRegular,
+    fontSize: responsiveFontSize(2),
+    color: textColor.primary,
+  },
+  termsview: {
+    flexDirection: "row",
+    alignSelf: "center",
+    marginTop: responsiveHeight(2),
+  },
+  termstxt: {
+    fontFamily: fontFamily.appTextBold,
+    fontSize: responsiveFontSize(2),
+  },
+  logoview: {
+    alignSelf: "center",
+    marginTop: responsiveHeight(4),
+    alignItems: "center",
+  },
+  versiontxt: {
+    color: textColor.secondary,
+    textAlign: "center",
+    marginTop: responsiveHeight(0.5),
+  },
+  resetbtntxt: {
+    fontFamily: fontFamily.appTextMedium,
+    color: "white",
+    fontSize: responsiveFontSize(2.4),
+    textTransform:'uppercase'
+  },
+  resetbtntxt2: {
+    fontFamily: fontFamily.appTextMedium,
+    color: "#8c8c8c",
+    fontSize: responsiveFontSize(2.4),
+    textTransform:'uppercase'
+  },
+  resetbtn: {
+    marginVertical: responsiveHeight(1),
+    // width: responsiveWidth(90),
+    // height: responsiveHeight(7),
+    backgroundColor: buttonColor.grey,
+    // backgroundColor: textColor.secondary,
+    width: responsiveWidth(90),
+    height: responsiveHeight(7),
+    justifyContent: "center",
+    alignSelf: "center",
+    alignItems: "center",
+    borderRadius: responsiveWidth(5),
+  },
+  resetbtn1: {
+    marginVertical: responsiveHeight(1),
+    backgroundColor: textColor.secondary,
+    width: responsiveWidth(90),
+    height: responsiveHeight(7),
+    justifyContent: "center",
+    alignSelf: "center",
+    alignItems: "center",
+    borderRadius: responsiveWidth(5),
+  },
+  resetbtnheader: {
+    // flexDirection: "row",
+    // justifyContent: "space-between",
+    width:
+      Platform.OS === "android" ? responsiveWidth(85) : responsiveWidth(90),
+    alignSelf: "center",
+    marginTop: responsiveHeight(2),
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  unMatchText: {
+    fontFamily: fontFamily.appTextBold,
+    fontSize: responsiveFontSize(2),
+    width: responsiveWidth(70),
+    textAlign: "center",
+    alignSelf: "center",
+    marginTop: responsiveHeight(8),
+  },
+  unMatchText1: {
+    fontSize: responsiveFontSize(1.5),
+    color: textColor.lightgrey,
+    width: responsiveWidth(70),
+    alignSelf: "center",
+    textAlign: "center",
+    marginTop: responsiveHeight(1),
+  },
+  btnGroup: {
+    flexDirection: "row",
+    width: responsiveWidth(90),
+    alignSelf: "center",
+    // backgroundColor: "red",
+
+    justifyContent: "center",
+    marginTop: responsiveHeight(2),
+  },
+  noBtn: {
+    backgroundColor: buttonColor.grey,
+    width: responsiveWidth(30),
+    height: responsiveHeight(6),
+    justifyContent: "center",
+    alignItems: "center",
+    marginRight: responsiveWidth(3),
+    borderRadius: responsiveWidth(5),
+  },
+  yesBtn: {
+    backgroundColor: textColor.secondary,
+    width: responsiveWidth(30),
+    height: responsiveHeight(6),
+    justifyContent: "center",
+    alignItems: "center",
+    // marginRight: responsiveWidth(3),
+    borderRadius: responsiveWidth(5),
+  },
+  yesTxt: {
+    fontFamily: fontFamily.appTextBold,
+    color: "white",
+  },
+  noTxt: {
+    fontFamily: fontFamily.appTextBold,
+  },
+  subContainer: {
+    backgroundColor: "#fff",
+    elevation: 10,
+    flex: 0.9,
+    borderTopEndRadius: responsiveWidth(9),
+    borderTopStartRadius: responsiveWidth(9),
+  },
+  infoheading: {
+    color: textColor.secondary,
+    fontFamily: fontFamily.appTextBold,
+    fontSize: responsiveFontSize(2),
+  },
+  detailsview: {
+    flexDirection: "row",
+    alignItems: "center",
+  },
+});

@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "258425632109",
+    "project_id": "react-native-keebo",
+    "storage_bucket": "react-native-keebo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:258425632109:android:2066e49e3eb25902991664",
+        "android_client_info": {
+          "package_name": "com.keebo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "258425632109-a1lckhu4i4rqd2to2qbgkqm5dag0k0ib.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEfwH25Q14F1JCh13jYuSYUFFLi1irWZs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "258425632109-a1lckhu4i4rqd2to2qbgkqm5dag0k0ib.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "258425632109-3vjrpha7q46h3igbra9082ds493ks640.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.app.keebo"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
